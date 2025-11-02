@@ -1,0 +1,337 @@
+export const personalInfo = {
+  name: "Iramam Silva",
+  alias: "Fenri-Lunaedge",
+  title: "Senior Business Intelligence Analyst",
+  tagline: "Transforming Data into Strategic Insights",
+  location: "São Paulo, Brazil",
+  email: "jralencars@gmail.com",
+  phone: "+55 (11) 93151-4270",
+  linkedin: "https://linkedin.com/in/iramamasilva",
+  github: "https://github.com/Fenri-Lunaedge",
+  portfolio: "https://fenri-lunaedge.github.io",
+};
+
+export const about = {
+  summary: `Senior BI Analyst with 5+ years of experience creating interactive dashboards and managing ETL processes.
+    Currently developing skills in Power BI and Python, seeking to expand expertise in DataViz tools to deliver
+    even more complete and strategic analyses. Solid experience with Tableau and Pentaho, transforming data into
+    insights that support business decisions. Work extends from data integration and preparation to creating
+    detailed reports, focusing on operational efficiency and process automation when possible.`,
+  education: [
+    {
+      degree: "MBA in Business Intelligence & Analytics",
+      institution: "Universidade de São Paulo (USP)",
+      period: "2024 - 2026",
+      status: "In Progress",
+    },
+    {
+      degree: "Technologist in Information Technology/Information Systems",
+      institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
+      period: "2018 - 2021",
+      status: "Completed",
+    },
+    {
+      degree: "IT Assistant Certificate",
+      institution: "Escola SENAI de Informática",
+      period: "2015 - 2016",
+      status: "Completed",
+    },
+  ],
+  stats: [
+    { label: "Years of Experience", value: "5+", icon: "briefcase" },
+    { label: "Projects Delivered", value: "50+", icon: "rocket" },
+    { label: "Dashboards Created", value: "100+", icon: "chart" },
+    { label: "Lines of Code", value: "20K+", icon: "code" },
+  ],
+};
+
+export const experience = [
+  {
+    company: "Samsung SDS",
+    role: "Senior BI Analyst",
+    period: "March 2025 - Present",
+    duration: "8 months",
+    location: "São Paulo, Brazil",
+    type: "Full-time",
+    description: [
+      "Developed Tableau and PowerBI dashboards for LAO Public Relations internal team",
+      "Utilized Python and SQL (SAP HANA and Vertica) for brand monitoring and event analysis",
+      "Built full-stack platform for automated social media and media data analysis with NLP",
+      "Implemented 13 integrated modules (FastAPI + SQLite + APScheduler)",
+      "Created multi-language NLP engine (PT/EN/ES) with hierarchical entity detection",
+      "Designed configurable ETL pipeline with recurring scheduling system",
+      "Developed Tableau-style interactive visualization (PYGWalker)",
+      "Implemented advanced Excel export with conditional formatting",
+    ],
+    technologies: [
+      "Tableau",
+      "Power BI",
+      "Python",
+      "SQL",
+      "SAP HANA",
+      "Vertica",
+      "FastAPI",
+      "spaCy",
+      "NLP",
+    ],
+    achievements: [
+      "Automated social media monitoring for entire LAO region",
+      "Built ~15,000 lines of production code",
+      "Reduced manual reporting time by 80%",
+    ],
+  },
+  {
+    company: "Teresa Perez Tours",
+    role: "BI Analyst",
+    period: "October 2020 - February 2025",
+    duration: "4 years 5 months",
+    location: "São Paulo, Brazil",
+    type: "Full-time",
+    description: [
+      "Created and managed dashboards using Tableau, Pentaho, and Power BI",
+      "Focused on strategic analysis and decision-making support",
+      "Managed application servers, solving performance issues",
+      "Ensured tool availability for business areas",
+      "Administered ETL and Data Warehousing processes",
+      "Used Apache Hop and Pentaho Data Integration",
+      "Worked with Oracle, MySQL (MariaDB), SQL Server, and Progress OpenEdge",
+      "Developed reports meeting all departmental needs",
+    ],
+    technologies: [
+      "Tableau",
+      "Pentaho",
+      "Power BI",
+      "Apache Hop",
+      "Oracle",
+      "MySQL",
+      "SQL Server",
+      "Progress OpenEdge",
+    ],
+    achievements: [
+      "Managed enterprise-wide BI infrastructure",
+      "Implemented automated ETL processes",
+      "Optimized server performance by 40%",
+    ],
+  },
+  {
+    company: "Teresa Perez Tours",
+    role: "Systems Support Assistant",
+    period: "October 2019 - May 2020",
+    duration: "8 months",
+    location: "São Paulo, Brazil",
+    type: "Full-time",
+    description: [
+      "Supported system analysts with manual testing",
+      "Fixed errors via SGBD",
+      "Managed employee and vendor access administration",
+    ],
+    technologies: ["SQL", "Database Administration", "Testing"],
+    achievements: [],
+  },
+];
+
+export const skills = {
+  biTools: [
+    { name: "Tableau", level: 95, years: 4, primary: true },
+    { name: "Power BI", level: 85, years: 2, primary: true },
+    { name: "Pentaho", level: 90, years: 4, primary: true },
+    { name: "Knime", level: 75, years: 1, primary: false },
+    { name: "Excel Advanced", level: 90, years: 5, primary: false },
+  ],
+  programming: [
+    { name: "SQL", level: 95, years: 5, primary: true },
+    { name: "Python", level: 85, years: 3, primary: true },
+    { name: "DAX", level: 80, years: 2, primary: false },
+  ],
+  etl: [
+    { name: "Apache Hop", level: 90, years: 3, primary: true },
+    { name: "Pentaho DI", level: 90, years: 4, primary: true },
+    { name: "ETL Design", level: 90, years: 4, primary: false },
+  ],
+  databases: [
+    { name: "SAP HANA", level: 85, years: 1, primary: true },
+    { name: "Vertica", level: 85, years: 1, primary: true },
+    { name: "Oracle", level: 80, years: 4, primary: false },
+    { name: "SQL Server", level: 85, years: 4, primary: false },
+    { name: "MySQL/MariaDB", level: 85, years: 4, primary: false },
+    { name: "PostgreSQL", level: 75, years: 2, primary: false },
+  ],
+  aiNlp: [
+    { name: "spaCy NLP", level: 80, years: 1, primary: true },
+    { name: "Multi-language NLP", level: 75, years: 1, primary: false },
+    { name: "Entity Detection", level: 75, years: 1, primary: false },
+    { name: "Sentiment Analysis", level: 70, years: 1, primary: false },
+  ],
+  dataViz: [
+    { name: "PYGWalker", level: 80, years: 1, primary: false },
+    { name: "Chart.js", level: 75, years: 1, primary: false },
+    { name: "Plotly", level: 70, years: 1, primary: false },
+    { name: "Matplotlib/Seaborn", level: 75, years: 2, primary: false },
+  ],
+  other: [
+    { name: "FastAPI", level: 80, years: 1, primary: false },
+    { name: "Git/GitHub", level: 85, years: 4, primary: false },
+    { name: "Server Administration", level: 75, years: 4, primary: false },
+    { name: "Pandas", level: 85, years: 2, primary: false },
+  ],
+};
+
+export const projects = [
+  {
+    id: "ultrathink",
+    title: "Ultrathink - Enterprise NLP Analytics Platform",
+    subtitle: "Full-stack platform for automated text analytics",
+    description: `Complete platform for contextual data analysis using Natural Language Processing (NLP),
+      developed to automate social media, newspaper, and other text source monitoring. Web system that
+      processes thousands of text lines, detects keywords, classifies sentiments, identifies entities,
+      and generates ready-to-analyze Excel reports.`,
+    featured: true,
+    category: "Full-Stack Development",
+    image: "/images/projects/ultrathink.jpg",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "spaCy",
+      "Pandas",
+      "SQLite",
+      "APScheduler",
+      "PYGWalker",
+      "Chart.js",
+      "Vanilla JS",
+    ],
+    stats: [
+      { label: "Lines of Code", value: "~15,000" },
+      { label: "API Endpoints", value: "60+" },
+      { label: "Web Interfaces", value: "17" },
+      { label: "Themes", value: "16" },
+    ],
+    features: [
+      "Multi-language NLP (PT/EN/ES) with automatic detection",
+      "4 keyword matching types (word, partial, exact, regex)",
+      "Negation, proximity, and context detection",
+      "6 advanced features: synonyms, positional scoring, irony/sarcasm detection",
+      "Hierarchical entity resolution (457 products in 6 categories)",
+      "Complete pipeline: NLP → Mapping (VLOOKUP) → Excel Export",
+      "Multiple Excel sheet support",
+      "Async jobs with progress tracking",
+      "Scheduled pipelines (hourly/daily/weekly/cron)",
+      "Webhook/email notifications",
+      "SAP HANA and Vertica connectors",
+      "Integrated data explorer (PYGWalker)",
+      "Excel exports with conditional formatting and automatic charts",
+      "16 themes with multi-tab sync",
+      "Real-time monitoring dashboard",
+    ],
+    highlights: [
+      "100% feature completion",
+      "Production-ready architecture",
+      "Zero frontend framework dependencies",
+      "Intelligent multi-layer caching",
+      "Enterprise-scale processing",
+    ],
+    github: null,
+    demo: null,
+    year: 2025,
+  },
+  {
+    id: "samsung-bi-dashboards",
+    title: "Samsung SDS - LAO Public Relations BI",
+    subtitle: "Executive dashboards for brand monitoring",
+    description: `Comprehensive Tableau and Power BI dashboards for Samsung's LAO (Latin America)
+      Public Relations team, providing real-time brand monitoring, sentiment analysis, and event tracking
+      across multiple markets and media channels.`,
+    featured: true,
+    category: "Business Intelligence",
+    image: "/images/projects/samsung-bi.jpg",
+    technologies: [
+      "Tableau",
+      "Power BI",
+      "Python",
+      "SAP HANA",
+      "Vertica",
+      "SQL",
+    ],
+    stats: [
+      { label: "Dashboards", value: "12+" },
+      { label: "Data Sources", value: "5+" },
+      { label: "Markets Covered", value: "LAO" },
+      { label: "Update Frequency", value: "Real-time" },
+    ],
+    features: [
+      "Real-time brand monitoring across LAO region",
+      "Sentiment analysis and trend detection",
+      "Multi-source data integration (social media, traditional media)",
+      "Executive-level KPI tracking",
+      "Automated reporting pipelines",
+      "Interactive drill-down capabilities",
+      "Custom visualizations for PR metrics",
+    ],
+    highlights: [
+      "Serving entire LAO PR team",
+      "Processing millions of records",
+      "Automated daily updates",
+    ],
+    github: null,
+    demo: null,
+    year: 2025,
+  },
+  {
+    id: "teresa-bi-infrastructure",
+    title: "Teresa Perez Tours - BI Infrastructure",
+    subtitle: "Enterprise-wide BI and ETL management",
+    description: `Complete BI infrastructure management including dashboard creation, ETL/DWH administration,
+      and server optimization for a major tourism company. Served all departments with comprehensive
+      data analytics and reporting capabilities.`,
+    featured: true,
+    category: "Business Intelligence",
+    image: "/images/projects/teresa-bi.jpg",
+    technologies: [
+      "Tableau",
+      "Pentaho",
+      "Apache Hop",
+      "Oracle",
+      "MySQL",
+      "SQL Server",
+      "Progress OpenEdge",
+    ],
+    stats: [
+      { label: "Years Active", value: "4.5" },
+      { label: "Departments Served", value: "All" },
+      { label: "ETL Jobs", value: "50+" },
+      { label: "Performance Gain", value: "+40%" },
+    ],
+    features: [
+      "Enterprise-wide dashboard management",
+      "Complete ETL/DWH administration",
+      "Multi-database integration",
+      "Server performance optimization",
+      "Automated reporting for all departments",
+      "Data quality assurance processes",
+      "Self-service BI enablement",
+    ],
+    highlights: [
+      "Managed entire BI infrastructure",
+      "40% server performance improvement",
+      "Zero downtime deployments",
+    ],
+    github: null,
+    demo: null,
+    year: "2020-2025",
+  },
+];
+
+export const certifications = [
+  "ETL Fundamentals",
+  "Data Warehousing Concepts",
+  "Advanced SQL Techniques",
+];
+
+export const testimonials = [
+  {
+    name: "Samsung SDS Team",
+    role: "Public Relations Manager",
+    company: "Samsung SDS",
+    text: "Iramam developed an incredible NLP platform that automated our entire social media monitoring process. The Ultrathink platform saved us countless hours and provided insights we never had before.",
+    avatar: "/images/testimonials/samsung.jpg",
+  },
+];
