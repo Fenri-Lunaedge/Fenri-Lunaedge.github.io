@@ -25,7 +25,7 @@ export const about = {
       status: "In Progress",
     },
     {
-      degree: "Technologist in Information Technology/Information Systems",
+      degree: "Technology in Systems Analysis and Development",
       institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
       period: "2018 - 2021",
       status: "Completed",

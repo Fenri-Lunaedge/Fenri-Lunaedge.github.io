@@ -9,7 +9,6 @@ export default function Hero() {
   useEffect(() => {
     setMounted(true);
   }, []);
-  // Fixed typos - rebuild
 
   if (!mounted) return null;
 
@@ -101,56 +100,56 @@ export default function Hero() {
             </div>
 
             {/* Terminal body */}
-            <div className="terminal-body space-y-2">
-              <TypewriterEffect text="$ cat profile.json" delay={0} />
-              <TypewriterEffect text="{" delay={800} />
-              <TypewriterEffect
+            <div className="terminal-body space-y-2 font-mono text-sm">
+              <TypewriterLine text="$ cat profile.json" delay={0} />
+              <TypewriterLine text="{" delay={800} />
+              <TypewriterLine
                 text='  "role": "Senior BI Analyst",'
                 delay={1200}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='  "experience": "5+ years",'
                 delay={1600}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='  "company": "Samsung SDS",'
                 delay={2000}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='  "expertise": ['
                 delay={2400}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "Tableau ⭐",'
                 delay={2800}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "Power BI",'
                 delay={3200}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "Python + NLP",'
                 delay={3600}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "ETL Engineering",'
                 delay={4000}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "Apache Hop",'
                 delay={4400}
               />
-              <TypewriterEffect
+              <TypewriterLine
                 text='    "SAP HANA & Vertica"'
                 delay={4800}
               />
-              <TypewriterEffect text="  ]," delay={5200} />
-              <TypewriterEffect
+              <TypewriterLine text="  ]," delay={5200} />
+              <TypewriterLine
                 text='  "passion": "Transforming data into strategic insights"'
                 delay={5600}
               />
-              <TypewriterEffect text="}" delay={6000} />
-              <TypewriterEffect
+              <TypewriterLine text="}" delay={6000} />
+              <TypewriterLine
                 text="$ █"
                 delay={6400}
                 className="text-neon-cyan animate-pulse"
@@ -163,8 +162,8 @@ export default function Hero() {
   );
 }
 
-// Typewriter effect component
-function TypewriterEffect({
+// Improved Typewriter effect component - Fixed undefined bug
+function TypewriterLine({
   text,
   delay = 0,
   className = "",
@@ -174,33 +173,35 @@ function TypewriterEffect({
   className?: string;
 }) {
   const [displayText, setDisplayText] = useState("");
-  const [showCursor, setShowCursor] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    const startTimeout = setTimeout(() => {
-      setShowCursor(true);
-      let index = 0;
-
-      const interval = setInterval(() => {
-        if (index < text.length) {
-          setDisplayText((prev) => prev + text[index]);
-          index++;
-        } else {
-          setShowCursor(false);
-          clearInterval(interval);
-        }
-      }, 30);
-
-      return () => clearInterval(interval);
+    // Start after delay
+    const startTimer = setTimeout(() => {
+      setStarted(true);
     }, delay);
 
-    return () => clearTimeout(startTimeout);
-  }, [text, delay]);
+    return () => clearTimeout(startTimer);
+  }, [delay]);
+
+  useEffect(() => {
+    if (!started || currentIndex >= text.length) return;
+
+    const typingTimer = setTimeout(() => {
+      setDisplayText(text.slice(0, currentIndex + 1));
+      setCurrentIndex(currentIndex + 1);
+    }, 30);
+
+    return () => clearTimeout(typingTimer);
+  }, [started, currentIndex, text]);
 
   return (
-    <div className={`font-mono text-sm ${className}`}>
+    <div className={className || ""}>
       {displayText}
-      {showCursor && <span className="animate-pulse">█</span>}
+      {started && currentIndex < text.length && (
+        <span className="animate-pulse">█</span>
+      )}
     </div>
   );
 }
