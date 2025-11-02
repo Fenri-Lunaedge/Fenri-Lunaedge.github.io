@@ -9,6 +9,7 @@ export default function Hero() {
   useEffect(() => {
     setMounted(true);
   }, []);
+  // Fixed typos - rebuild
 
   if (!mounted) return null;
 
