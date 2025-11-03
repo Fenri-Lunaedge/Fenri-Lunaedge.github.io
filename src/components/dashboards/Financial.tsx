@@ -49,8 +49,8 @@ export default function FinancialDashboard() {
               {key.replace(/([A-Z0-9])/g, " $1").trim().toUpperCase()}
             </div>
             <div className={`text-2xl font-bold ${
-              key === "sharpeRatio" && value > 1.5 ? "text-data-success" :
-              key === "volatility" && value < 20 ? "text-data-success" :
+              key === "sharpeRatio" && typeof value === "number" && value > 1.5 ? "text-data-success" :
+              key === "volatility" && typeof value === "number" && value < 20 ? "text-data-success" :
               "text-neon-cyan"
             }`}>
               {typeof value === "number"
