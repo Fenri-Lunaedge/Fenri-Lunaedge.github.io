@@ -22,6 +22,10 @@ const Contact = dynamic(() => import("@/components/sections/Contact"), {
   loading: () => <LoadingSection />,
 });
 
+const Dashboards = dynamic(() => import("@/components/sections/Dashboards"), {
+  loading: () => <LoadingSection />,
+});
+
 function LoadingSection() {
   return (
     <div className="section flex items-center justify-center">
@@ -53,6 +57,9 @@ export default function Home() {
               <a href="#projects" className="link text-sm">
                 Projects
               </a>
+              <a href="#dashboards" className="link text-sm">
+                Dashboards
+              </a>
               <a href="#skills" className="link text-sm">
                 Skills
               </a>
@@ -60,7 +67,6 @@ export default function Home() {
                 Contact
               </a>
             </div>
-
             {/* Mobile menu button */}
             <button className="md:hidden text-neon-cyan">
               <svg
@@ -86,6 +92,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <Dashboards />
       <Skills />
       <Contact />
 
