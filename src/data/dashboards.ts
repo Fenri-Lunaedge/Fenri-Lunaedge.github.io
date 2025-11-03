@@ -18,12 +18,12 @@ export const luxuryTourismData = {
     ],
   },
   destinations: [
-    { name: "Maldives", bookings: 245, revenue: 13475000, avgStay: 7.5, satisfaction: 98 },
-    { name: "Dubai", bookings: 312, revenue: 15600000, avgStay: 5.2, satisfaction: 96 },
-    { name: "Paris", bookings: 189, revenue: 9450000, avgStay: 6.1, satisfaction: 94 },
-    { name: "Tokyo", bookings: 156, revenue: 8580000, avgStay: 8.3, satisfaction: 97 },
-    { name: "New York", bookings: 203, revenue: 10150000, avgStay: 4.8, satisfaction: 93 },
-    { name: "Bora Bora", bookings: 98, revenue: 7840000, avgStay: 9.2, satisfaction: 99 },
+    { name: "Maldives", bookings: 245, revenue: 13475000, avgStay: 8, satisfaction: 98 },
+    { name: "Dubai", bookings: 312, revenue: 15600000, avgStay: 5, satisfaction: 96 },
+    { name: "Paris", bookings: 189, revenue: 9450000, avgStay: 6, satisfaction: 94 },
+    { name: "Tokyo", bookings: 156, revenue: 8580000, avgStay: 8, satisfaction: 97 },
+    { name: "New York", bookings: 203, revenue: 10150000, avgStay: 5, satisfaction: 93 },
+    { name: "Bora Bora", bookings: 98, revenue: 7840000, avgStay: 9, satisfaction: 99 },
   ],
   clientProfile: {
     ageGroups: [
